@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Secular+One&display=swap');
+
+/* <========================================================================================>
+-----------------------------------Css Reset----------------------------------------------
+<========================================================================================> */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    
+    background-color: #efefef;
+}
+img{
+    cursor: pointer;
+}
+
+/* <========================================================================================>
+-----------------------------------Navbar Start----------------------------------------------
+<========================================================================================> */
+
+.navbar{
+    background-color: #1876f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px;
+}
+
+.logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 80px;
+
+    
+}
+
+.navbar-left img{
+    margin: 0 20px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.navbar-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    width: 400px;
+}
+
+.search-box{
+    background-color:#efefef ;
+    border: 2px solid #efefef;
+    border-radius: 35px;
+    width:300px;
+    padding: 5px 10px;
+
+}
+
+.search-box input{
+    background-color: #efefef;
+    color: #fff;
+    width: 85%;
+    outline: none;
+    color: black;
+    border: solid #efefef;
+}
+
+.fa-magnifying-glass{
+    cursor: pointer;
+}
+
+.navbar-right img{
+    border-radius: 50%;
+    margin-left: 20px ;
+    cursor: pointer;
+}
+
+
+
+/* <========================================================================================>
+-----------------------------------Navbar End----------------------------------------------
+<========================================================================================> */
+
+
+/* <========================================================================================>
+-----------------------------------Container Section Start-----------------------------------
+<========================================================================================> */
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    
+
+}
+
+
+/* <========================================================================================>
+-----------------------------------Left SideBar----------------------------------------------
+<========================================================================================> */
+
+.left-sidebar{
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: rgb(67 71 85 / 27%) 0px 0px 0.25em, rgb(90 125 188 / 5%) 0px 0.25em 1em;
+    padding: 10px 25px; 
+    width: 20%;
+    position: sticky;
+    top:0;
+
+}
+
+.sidebar-links{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sidebar-links a{
+    color: black ;
+    text-decoration: none;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-links a img{
+    width: 30px;
+    margin-right: 20px;
+}
+
+.seemore-btn{
+    color: #1876f2;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.shortcuts-section{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.shortcuts-section a{
+    color: black ;
+    text-decoration: none;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.shortcuts-section a img{
+    width: 30px;
+    margin-right: 20px;
+    border-radius:5px ;
+
+}
+
+.shortcuts-section h4{
+    margin: 20px 0;
+}
+
+
+/* <========================================================================================>
+-----------------------------------Right SideBar----------------------------------------------
+<========================================================================================> */
+
+.right-sidebar{
+    /* border: 2px solid red; */
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: rgb(67 71 85 / 27%) 0px 0px 0.25em, rgb(90 125 188 / 5%) 0px 0.25em 1em;
+    padding: 10px 25px; 
+    width: 20%;
+    /* position: sticky; */
+    /* top: 10px; */
+    /* position: fixed; */
+
+}
+
+.event{
+    display: flex;
+    justify-content: space-between;
+}
+
+.event a{
+    color: #1876f2;
+    text-decoration: none;
+}
+
+.event-box{
+    display: flex;
+    margin: 10px 0;
+    padding: 10px 0;
+
+}
+.event-box .date-box{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: rgb(67 71 85 / 27%) 0px 0px 0.25em, rgb(90 125 188 / 5%) 0px 0.25em 1em;
+    border-radius: 8px;
+}
+.date-box p{
+    height: 70%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date-box div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+    width: 100%;
+    height: 30%;
+    background-color: #1876f2;
+}
+.event-box .text-box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.text-box p{
+    font-size: 18px;
+}
+.text-box small{
+    font-size: 12px;
+    align-items: center;
+    display: flex;
+}
+
+.text-box img{
+    width: 10px;
+    margin-right: 3px;
+
+}
+.text-box a{
+    color: #1876f2;
+    text-decoration: none;
+    font-size:12px ;
+}
+
+.add{
+    display: flex;
+    justify-content: space-between;
+}
+.add a{
+    text-decoration: none;
+    color: #1876f2;
+}
+
+.add-img img{
+    width: 220px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.conversation-section{
+   
+}
+
+.conv-head{
+    display: flex;
+    justify-content: space-between;
+}
+.conv-head a{
+    color: #1876f2;
+    text-decoration: none;
+    font-size: 12px;
+}
+.conv-person{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.conv-person img{
+    border-radius: 50%;
+    width: 40px;
+    cursor: pointer;
+}
+.conv-person p{
+    margin-left: 20px;
+}
+
+
+
+
+
+
+/* <========================================================================================>
+-----------------------------------Container Mid Content-------------------------------------
+<========================================================================================> */
+
+.mid-content{
+    /* border: 2px solid red; */
+    width: 50%;
+
+
+}
+.status-container{
+    display: flex;
+    justify-content: space-between;
+}
+.status{
+    background :linear-gradient(transparent , rgba(0,0,0,0.5)),
+    url('images/status-1.png');
+    box-shadow: rgb(67 71 85 / 27%) 0px 0px 0.25em, rgb(90 125 188 / 5%) 0px 0.25em 1em;
+    height: 200px;
+    background-size: cover;
+    border-radius:10px ;
+    width: 120px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+
+}
+
+.status img{
+    width: 40px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    border: 5px solid #1876f2;
+    border-radius: 50px;
+}
+.status-1 img{
+    width: 40px;
+    position: relative; 
+    top: 125px; 
+    left: 40px; 
+    border: 4px solid #1876f2;
+    border-radius: 50px;
+}
+.status p{
+    position: relative;
+    top:130px;
+    text-align: center;
+    color: #fff;
+}
+
+.status-2{
+    background :linear-gradient(transparent , rgba(0,0,0,0.5)),
+    url('images/status-2.png');
+    box-shadow: rgb(67 71 85 / 27%) 0px 0px 0.25em, rgb(90 125 188 / 5%) 0px 0.25em 1em;
+    background-size: cover;
+
+}
+.status-3{
+    background :linear-gradient(transparent , rgba(0,0,0,0.5)),
+    url('images/status-3.png');
+    box-shadow: rgb(67 71 85 / 27%) 0px 0px 0.25em, rgb(90 125 188 / 5%) 0px 0.25em 1em;
+    background-size: cover;
+
+}
+.status-4{
+    background :linear-gradient(transparent , rgba(0,0,0,0.5)),
+    url('images/status-4.png');
+    box-shadow: rgb(67 71 85 / 27%) 0px 0px 0.25em, rgb(90 125 188 / 5%) 0px 0.25em 1em;
+    background-size: cover;
+
+}
+.status-5{
+    background :linear-gradient(transparent , rgba(0,0,0,0.5)),
+    url('images/status-5.png');
+    box-shadow: rgb(67 71 85 / 27%) 0px 0px 0.25em, rgb(90 125 188 / 5%) 0px 0.25em 1em;
+    background-size: cover;
+
+}
+
+
+.post-write-container{
+    background: #fff;
+    width: 100%;
+    height: 180px;
+    box-shadow: rgb(67 71 85 / 27%) 0px 0px 0.25em, rgb(90 125 188 / 5%) 0px 0.25em 1em;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.profile-area{
+    display: flex;
+    padding: 20px 0 0 20px;
+}
+.profile-area img{
+    width: 50px;
+    border-radius: 50%;
+}
+.profile-area p{
+    margin-left: 10px;
+    margin-bottom: 0;
+    align-items: center;
+}
+.profile-area p small{
+    font-size:12px ;
+}
+
+.fa-angle-down{
+    margin-left: 2px;
+}
+
+.post-type{
+    background-color: #efefef;
+    border: 2px solid #efefef;
+    width: 90%;
+    border-radius: 35px;
+    padding: 5px 20px;
+    margin: 10px 20px ;
+    
+}
+.post-type input{
+    width: 100%;
+    background-color: #efefef;
+    color: #fff;
+    width: 85%;
+    outline: none;
+    color: black;
+    border: solid #efefef;
+}
+.post-write-container hr{
+    color: black;
+    width: 88%;
+    margin: 0 25px;
+}
+
+.post-icons{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 20px;
+}
+.p-icon{
+    display: flex;
+    align-items: center;
+}
+.p-icon img {
+    margin-right: 10px;
+}
+
+
+/*<!-- -----------------------------------Post Container Section---------------------------------------------- -->*/
+.post-container-section{
+    background: #fff;
+    width: 100%;
+    height: 600px;
+    box-shadow: rgb(67 71 85 / 27%) 0px 0px 0.25em, rgb(90 125 188 / 5%) 0px 0.25em 1em;
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 20px;
+}
+.profile-area-2{
+    display: flex;
+}
+.profile-2-img{
+    width: 50px;
+    border-radius: 50%;
+}
+.profile-area-2 p{
+    margin-left: 10px;
+    margin-bottom: 0;
+    align-items: center;
+}
+.profile-area-2 p small{
+    font-size:12px ;
+}
+.more-img{
+    height: 50%;
+    align-items: center;
+    padding-left: 370px;
+    padding-top: 22px ;
+}
+
+.post-text{
+    /* border: 2px solid blue; */
+    margin: 15px 0;
+    background-color: #efefef;
+}
+
+
+
+.video{
+    /* border: 2px solid red; */
+    height: 300px;
+    /* margin: 20px; */
+    background-color: black;
+}
+
+.like-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    /* border: 2px solid red; */
+    align-items: center;
+    margin: 10px 0;
+}
+.comment-box{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.comment-box img{
+    width: 50px ;
+    border-radius: 50%;
+}
+
+.input-box{
+    background-color: #efefef;
+    border: 2px solid #efefef;
+    width: 90%;
+    border-radius: 35px;
+    padding: 5px 20px;
+    margin: 10px  ;
+    display: flex;
+    
+}
+.input-box input{
+    width: 100%;
+    background-color: #efefef;
+    color: #fff;
+    width: 85%;
+    outline: none;
+    color: black;
+    border: solid #efefef;
+}
+    
+.c-btn{
+    background-color: #1876f2;
+    border: 2px solid #1876f2;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.c-btn:hover{
+    background-color: #195eb9;
+
+}
+
+
+
+
+
+
+
+p{
+    font-weight: 600;
+}
+
+small{
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
